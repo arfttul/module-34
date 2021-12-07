@@ -1,20 +1,7 @@
-function greet(name, greetHandler) {
-    greetHandler(name);
+function greet(name) {
+    const p = document.getElementById('p-tag');
+    p.innerText =  `Good Noon`;
+    console.log('good noon');
 }
-function greetEvening(name) {
-    console.log(name, 'good Evening!');
-}
-function greetMorning(name) {
-    console.log(name, 'good Morning!');
-}
-function greetNight(name) {
-    console.log(name, 'good Night!');
-}
-
-
-const name = 'jarif';
-const name1 = 'mahdi';
-const name2 = 'efty';
-greet(name, greetEvening);
-greet(name1, greetMorning);
-greet(name2, greetNight);
+const name = 'arafat'
+document.getElementById('btn-id').addEventListener('click',greet);
